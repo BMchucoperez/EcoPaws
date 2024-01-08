@@ -1,0 +1,28 @@
+.carrusel{
+    display: block;
+    width: 100%;
+}
+
+.carouselComponent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container{
+    background-color: bisque;
+}
+
+.container h1{
+    padding-top: 100px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.aviso{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}

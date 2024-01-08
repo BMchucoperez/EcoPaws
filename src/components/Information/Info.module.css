@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.subcontainer{
+    display: flex;
+    width: 25%;
+    padding: 0 15px;
+    flex-direction: column;
+}
