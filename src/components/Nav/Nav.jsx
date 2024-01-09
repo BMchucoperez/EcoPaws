@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import style from "./Nav.module.css";
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () =>{
 
@@ -33,7 +35,9 @@ const navbarClass = visible ? style.navBar : `${style.navBar} ${style.hiddenNavB
                 <input type="text" placeholder="Buscar..." />
                 <button className={style.btn}>Buscar</button>
             </div>
-            <button className={style.btn}>Carrito</button>
+            <Link>
+                <img className={style.carrito} src="/images/carrito2.png" alt="carrito" />
+            </Link>
         </div>
     );
 };

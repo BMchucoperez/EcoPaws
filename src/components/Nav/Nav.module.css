@@ -51,6 +51,24 @@
         transform: scale(1.11);
         cursor: pointer;
     }
+
+    .carrito{
+        max-width: 100%;
+        display: block;  /* Asegúrate de que la imagen sea un elemento de bloque */
+        margin: 0 auto;
+        height: auto;
+        width: 70px;
+    }
+
+    .carrito:hover{
+        transform: scale(1.11);
+        cursor: pointer;
+    }
+
+    .navBar > div {
+        display: flex;
+        align-items: center;
+    }
 }
 
 @media (max-width: 767px){

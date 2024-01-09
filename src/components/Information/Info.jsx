@@ -1,12 +1,15 @@
 import style from "./Info.module.css";
+import React from "react";
+import { Link } from 'react-router-dom';
 
 const Info = () => {
     return(
         <div className={style.container}>
             <div className={style.subcontainer}>
                 <h4>EcoPaws</h4>
+                <img className={style.logo} src="/images/logo2.png" alt="logo" />
             </div>
-            <div className={style.subcontainer}>
+            <div className={style.subcontainer2}>
                 <h4>Atención al Cliente</h4>
                 <span>🔹 Términos y Condiciones</span>
                 <span>🔹 Política de ventas</span>
@@ -17,9 +20,18 @@ const Info = () => {
             </div>
             <div className={style.subcontainer}>
                 <h4>Formas de Pago</h4>
+                <img className={style.logo2} src="/images/formas_pago.png" alt="pago" />
             </div>
-            <div className={style.subcontainer}>
+            <div className={style.subcontainer2}>
                 <h4>Información de Contacto</h4>
+                <div className={style.cont}>
+                    <Link>
+                        <img className={style.logo3} src="/images/wsp.png" alt="wsp" />
+                    </Link>
+                </div>
+                <br />
+                <span>Correo Electrónico:</span>
+                <span>liliana.cayo@outlook.com</span>
             </div>
         </div>
     );
