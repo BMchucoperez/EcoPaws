@@ -1,3 +1,4 @@
+@media (min-width: 768px){
 .carrusel{
     display: block;
     width: 100%;
@@ -7,12 +8,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
 .container{
-    background-color: bisque;
+    background: linear-gradient(rgba(198, 202, 205, 0.5), rgba(198,202,205,0.5)), url("../../../public/images/fondo.jpg");
 }
 
 .container h1{
@@ -23,6 +24,39 @@
 
 .aviso{
     display: flex;
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
+}
+}
+
+@media (max-width: 767px){
+    .carrusel{
+        display: block;
+        width: 100%;
+    }
+    
+    .carouselComponent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .container{
+        background: linear-gradient(rgba(198, 202, 205, 0.5), rgba(198,202,205,2)), url("../../../public/images/fondo2.jpg");
+        background-repeat: repeat;
+    }
+    
+    .container h1{
+        padding-top: 100px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+    .aviso{
+        display: flex;
+        width: 95%;
+        margin: 0 auto;
+    }
 }

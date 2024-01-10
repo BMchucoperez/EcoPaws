@@ -74,23 +74,72 @@
 @media (max-width: 767px){
     .navBar{
         display: flex;
+        flex-direction: row;
+        position: fixed;
         align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        background-color: #2b3e3e;
-        padding: 10px;
+        background-color: #0000003b;
+        width: 100%;
+        height: 9vh;
+        z-index: 1000;
+        animation: nav .5s forwards;
+        font-family: 'Yuji Syuku', serif;
+        list-style-type: none;
+    }
+    
+    @keyframes nav {
+        0%{
+            top: -15%;
+        }
+        100%{
+            top: 0;
+        }
+        
+    }
+    
+    .hiddenNavBar{
+        animation: hideNav .5s forwards
+    }
+    
+    @keyframes hideNav {
+        0%{
+            top: 0;
+        }
+        100% {
+            top: -15%;
+        }
+        
+    }
+
+    .input{
+        width: 80%;
+        border-radius: 10px;
+        background-color: beige;
+    }
+    
+    .buscar{
+        display: flex;
+        margin-left: 10px;
     }
 
     .btn{
-        background-color: #4f585c;
-        color: #fff;
+        background-color: transparent;
         border: none;
-        padding: 10px 20px;
-        margin: 5px;
-        border-radius: 11px;
+        color: rgb(119, 22, 22);
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bolder;
     }
     
-    .btn:hover{
-        transform: scale(1.11);
+    .carrito{
+        max-width: 100%;
+        display: block;  /* Asegúrate de que la imagen sea un elemento de bloque */
+        margin: 0 auto;
+        height: auto;
+        width: 70px;
+    }
+
+    .navBar > div {
+        display: flex;
+        align-items: center;
     }
 }

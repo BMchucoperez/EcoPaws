@@ -1,6 +1,5 @@
 import style from "./Info.module.css";
 import React from "react";
-import { Link } from 'react-router-dom';
 
 const Info = () => {
     return(
@@ -25,9 +24,9 @@ const Info = () => {
             <div className={style.subcontainer2}>
                 <h4>Información de Contacto</h4>
                 <div className={style.cont}>
-                    <Link>
+                    <a>
                         <img className={style.logo3} src="/images/wsp.png" alt="wsp" />
-                    </Link>
+                    </a>
                 </div>
                 <br />
                 <span>Correo Electrónico:</span>

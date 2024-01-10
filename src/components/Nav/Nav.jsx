@@ -30,12 +30,14 @@ const navbarClass = visible ? style.navBar : `${style.navBar} ${style.hiddenNavB
 
     return(
         <div className={navbarClass}>
-            <button className={style.btn}>EcoPaws</button>
-            <div>
-                <input type="text" placeholder="Buscar..." />
+            <Link to="/">
+                <img className={style.carrito} src="/images/logo2.png" alt="logo2" />
+            </Link>
+            <div className={style.buscar}>
+                <input className={style.input} type="text" placeholder="Buscar..." />
                 <button className={style.btn}>Buscar</button>
             </div>
-            <Link>
+            <Link to="/">
                 <img className={style.carrito} src="/images/carrito2.png" alt="carrito" />
             </Link>
         </div>
