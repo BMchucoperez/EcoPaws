@@ -1,6 +1,7 @@
 import { Carousel } from 'react-bootstrap';
 import style from "./Home.module.css";
 import Info from '../Information/Info';
+import Products from '../Products/Products';
 
 const Home = () => {
     return(
@@ -40,7 +41,9 @@ const Home = () => {
                 </Carousel.Item>
             </Carousel>
 
-            <h1>PRODUCTOS</h1>
+            <h2>PRODUCTOS</h2>
+
+            <Products/>
 
             <br />
 

@@ -33,6 +33,10 @@
     display: flex;
     width: 50%;
 }
+.logo:hover{
+    transform: scale(1.07);
+    cursor: pointer;
+}
 
 .logo2{
     display: flex;
@@ -45,6 +49,10 @@
     border-radius: 20px;
     display: block;
     margin: 0 auto;
+}
+.logo3:hover{
+    transform: scale(1.07);
+    cursor: pointer;
 }
 
 .subcontainer2 h4{
@@ -93,6 +101,11 @@
         display: flex;
         width: 30%;
     }
+
+    .logo:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+    }
     
     .logo2{
         display: flex;
@@ -105,6 +118,11 @@
         border-radius: 20px;
         display: block;
         margin: 0 auto;
+    }
+
+    .logo3:hover{
+        transform: scale(1.05);
+        cursor: pointer;
     }
     
     .subcontainer2 h4{
